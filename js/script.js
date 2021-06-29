@@ -12,8 +12,22 @@ new Vue (
                 "Fare i compiti",
                 "Fare la spesa",
                 "Fare il bucato"
-            ]
+            ],
+        newTask:"",
+        
+        },
+        methods: {
+            addTask: function() { //con questa funzione prendi il task che ti arriva dall'input
+                this.toDoList.push(this.newTask);
+                this.newTask = "";
+
+            },
+        
+        deleteTask: function (index){
+            this.toDoList.splice(index, 1);
         }
+        }
+        
 
 })
 
