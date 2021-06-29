@@ -4,3 +4,17 @@
 //ogni item ha una “x” associata: cliccando su di essa, l’item viene rimosso dalla lista
 //predisporre un input per aggiungere un nuovo item alla lista: 
 //digitando il tasto invio oppure ciccando su un pulsante, il testo digitato viene aggiunto alla lista
+Vue.config.devtools = true;
+new Vue (
+    {   el:"#app",
+        data:{
+            toDoList: [
+                "Fare i compiti",
+                "Fare la spesa",
+                "Fare il bucato"
+            ]
+        }
+
+})
+
+
