@@ -7,8 +7,7 @@
 .input-area button{
     width: calc(100% - 12px);
     margin-left: 12px ;
-    border-radius: 10px;
-    
+    border-radius: 10px;   
 }
 .list-content{
     list-style: none;
@@ -17,7 +16,17 @@
 .list-content li{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 36px;
     margin: 0 20px;
+    padding: 0, 12px;
+    border-bottom: 1px solid black;
+}
+.list-content li:hover{
+    background-color: #fff;
+}
+.list-content li i{
+    cursor: pointer;
 }
 .list-content li:first-child{
     margin-top: 20px;
