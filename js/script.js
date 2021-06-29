@@ -23,9 +23,9 @@ new Vue (
 
             },
         
-        deleteTask: function (index){
-            this.toDoList.splice(index, 1);
-        }
+            deleteTask: function (index){
+                this.toDoList.splice(index, 1);
+            }
         }
         
 
