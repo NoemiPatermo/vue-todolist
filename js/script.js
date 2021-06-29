@@ -16,18 +16,29 @@ new Vue (
         newTask:"",
         
         },
+        mounted (){
+            this.autoFocus;
+        },
         methods: {
+            autoFocus: function (){
+                const element = document.getElementById("newTaskElement");
+                element.focus
+            },
+         
+                
             addTask: function() { //con questa funzione prendi il task che ti arriva dall'input
                 this.toDoList.push(this.newTask);
                 this.newTask = "";
+                this.autoFocus;
 
             },
         
             deleteTask: function (index){
                 this.toDoList.splice(index, 1);
+                this.autoFocus;
             }
-        }
         
+        }
 
 })
 

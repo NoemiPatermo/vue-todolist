@@ -1,0 +1,27 @@
+.logo-box img{
+    width: 100%;
+}
+#newTaskElement{
+    width: 100%;
+}
+.input-area button{
+    width: calc(100% - 12px);
+    margin-left: 12px ;
+    border-radius: 10px;
+    
+}
+.list-content{
+    list-style: none;
+    background-color: #67f391d8;
+}
+.list-content li{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.list-content li:first-child{
+    margin-top: 20px;
+}
+.list-content li:last-child{
+    margin-bottom: 20px;
+}

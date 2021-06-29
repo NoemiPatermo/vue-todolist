@@ -12,14 +12,35 @@
 </head>
 <body>
     <div id="app">
-        <input v-model="newTask" placeholder="Nuovo Todo" @keyup.enter= "addTask">
-        <button @click="addTask">Aggiungi</button>
-        <ul>
-            <li v-for= "(todo, index) in toDoList">
-                <span>{{todo}}</span>
-                <i class="fas fa-minus-circle" @click="deleteTask(index)"></i>
-            </li>
-        </ul>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4"> 
+                    <div class="logo-box">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center input-area mt-3">
+                <div class="col-4 p-0">
+                    <input  class="form-control" 
+                    id="newTaskElement" 
+                    v-model="newTask" placeholder=" Nuovo Todo" 
+                    @keyup.enter= "addTask">
+                </div>
+                <div class="col-1 p-0">
+                    <button class="btn btn-outline-dark" @click="addTask">Aggiungi</button>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-4">
+                <ul class="col-8 list-content">
+                    <li v-for= "(todo, index) in toDoList">
+                        <span>{{todo}}</span>
+                        <i class="fas fa-minus-circle" @click="deleteTask(index)"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
